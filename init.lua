@@ -18,9 +18,11 @@ ensure_lazy()
 
 -- Настройка lazy.nvim
 require('lazy').setup({
--- require('plugins.neo-tree'),
+  -- require('plugins.neo-tree'),
   {'nvim-tree/nvim-tree.lua'},
   require('plugins.telescope'),
+  require('plugins.treesitter'),
+  --color
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {'folke/tokyonight.nvim'},  -- Добавляем тему tokyonight  
   {'morhetz/gruvbox'},
