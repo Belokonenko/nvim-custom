@@ -147,7 +147,7 @@ vim.cmd('colorscheme carbonfox') -- Используем Carbonfox из nightfox
 require('nvim-tree').setup({
   view = {
     width = 30, -- Ширина окна дерева
-    side = 'left', -- Размещение дерева слева
+    side = 'right', -- Размещение дерева слева
   },
   filters = {
     dotfiles = true, -- Показ скрытых файлов
