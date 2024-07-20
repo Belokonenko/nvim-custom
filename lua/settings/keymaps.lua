@@ -1,10 +1,10 @@
 -- Установите лидера
 vim.g.mapleader = ' '
 
--- vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
-    vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = '[E]xplore filesystem' })
-    vim.keymap.set('n', '<leader>f', ':Neotree focus<CR>', { desc = '[F]ocus on filesystem' })
+    -- vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = '[E]xplore filesystem' })
+    -- vim.keymap.set('n', '<leader>f', ':Neotree focus<CR>', { desc = '[F]ocus on filesystem' })
 
     -- Настройка перемещения по окнам
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
