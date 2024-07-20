@@ -18,7 +18,8 @@ ensure_lazy()
 
 -- Настройка lazy.nvim
 require('lazy').setup({
-  {'nvim-tree/nvim-tree.lua'},
+require('plugins.neo-tree'),
+  -- {'nvim-tree/nvim-tree.lua'},
   require('plugins.telescope'),
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {'folke/tokyonight.nvim'},  -- Добавляем тему tokyonight  
@@ -28,7 +29,7 @@ require('lazy').setup({
 
 -- Настройки плагинов
 require('plugins.telescope')
-require('plugins.nvim-tree')
+-- require('plugins.nvim-tree')
 require('plugins.colorshem')
 -- Дополнительные настройки
 require('settings.keymaps')

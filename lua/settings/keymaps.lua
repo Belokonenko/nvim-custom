@@ -1,16 +1,19 @@
 -- Установите лидера
 vim.g.mapleader = ' '
 
-vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
--- Настройка перемещения по окнам
+    vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = '[E]xplore filesystem' })
+    vim.keymap.set('n', '<leader>f', ':Neotree focus<CR>', { desc = '[F]ocus on filesystem' })
+
+    -- Настройка перемещения по окнам
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = true })
 
--- Открыть папку с файлом в системе
--- vim.api.nvim_set_keymap('n', '<C-o>', ':lua vim.fn.system("xdg-open " .. vim.fn.expand("%:p:h"))<CR>', { noremap = true, silent = true })
+--Открыть папку с файлом в системе
+vim.api.nvim_set_keymap('n', '<C-o>', ':lua vim.fn.system("xdg-open " .. vim.fn.expand("%:p:h"))<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<M-k>', ':resize +2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<M-j>', ':resize -2<CR>', { noremap = true, silent = true })
