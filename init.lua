@@ -20,10 +20,14 @@ ensure_lazy()
 require('lazy').setup({
   -- require('plugins.neo-tree'),
   {'nvim-tree/nvim-tree.lua'},
-  require('plugins.telescope'),
-  require('plugins.treesitter'),
+  
+  require('plugins.telescope'),   -- поиск
+
+  require('plugins.treesitter'),  -- улутшеная подсветка и автовыравнивание 
+  require('plugins.lspconfig'),   -- управление lsp установлеными через mason
+  
   --color
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {"catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {'folke/tokyonight.nvim'},  -- Добавляем тему tokyonight  
   {'morhetz/gruvbox'},
   {'EdenEast/nightfox.nvim'},
